@@ -4,7 +4,7 @@
 #
 Name     : pypi-envs
 Version  : 1.4
-Release  : 27
+Release  : 28
 URL      : https://files.pythonhosted.org/packages/3c/7f/2098df91ff1499860935b4276ea0c27d3234170b03f803a8b9c97e42f0e9/envs-1.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/3c/7f/2098df91ff1499860935b4276ea0c27d3234170b03f803a8b9c97e42f0e9/envs-1.4.tar.gz
 Summary  : Easy access of environment variables from Python with support for strings, booleans, list, tuples, and dicts.
@@ -15,9 +15,6 @@ Requires: pypi-envs-license = %{version}-%{release}
 Requires: pypi-envs-python = %{version}-%{release}
 Requires: pypi-envs-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: envs
-Provides: envs-python
-Provides: envs-python3
 BuildRequires : pypi(poetry_core)
 
 %description
@@ -68,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641434536
+export SOURCE_DATE_EPOCH=1649741769
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
